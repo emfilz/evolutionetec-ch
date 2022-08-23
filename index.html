@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dirección y validación eficiente en incidentes de ciberseguridad">
+    <meta name="keywords" content="ciberseguridad, ciberataques, SIEM, incidentes ciberneticos,SECaaS, parche de software, monitoreo, PCI-DSS, HIPAA, SOX, ">
+    <title>Evolutionetec</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/521fcec492.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="Logo Evolutionetec" class="logo-img">
+        </a>
+        <button class="nav-toggle" aria-label="Abrir menú" id="button">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu nav-menu_visible" id="menu">
+            <li class="nav-menu_link"><a href="#conozcanos">Conózcanos</a></li>
+            <li class="nav-menu_link"><a href="#servicios">Servicios</a></li>
+            <li class="nav-menu_link"><a href="#beneficios">Beneficios</a></li>
+            <li class="nav-menu_link"><a href="#contactenos">Contáctenos</a></li>
+        </ul>
+    </header>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Dirección y validación eficiente en incidentes de ciberseguridad.</h1>
+            <button>CONTÁCTENOS</button>
+        </div>
+        <img src="./images/hero-image.svg" alt="escudo de seguridad digital" class="hero-image">
+    </div>
+
+    <main>
+        <section class="main-conozcanos" id="conozcanos">
+            <h2>Conózcanos</h2>
+            <p>Asistimos a pequeñas y medianas empresas con los productos de seguridad del mejor TCO de la industria,
+                combinando capacidades comerciales nativas de SIEM con nuestro análisis avanzado e inteligencia de
+                amenazas para la detección de ciberataques.</p>
+            <p>Brindamos servicios de detección y validación de ataques cibernéticos, administración de la plataforma
+                SIEM, casos de uso personalizados, paneles, informes y cobertura 24/7.</p>
+        </section>
+
+        <div class="sections-with-bckg-top"></div>
+        <div class="sections-with-bckg-middle">
+            <section class="servicios" id="servicios">
+                <h2 class="servicios-title text-white">Servicios</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./images/slides/slide_1.png" alt="mujer trabajando frente en seguridad digital">
+                            <div class="carousel-caption">SOC 24/7 con expertos certificados que monitorean todos los eventos y alertan sobre incidentes de seguridad.</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/slides/slide_2.png" alt="sensor de seguridad digital">
+                            <div class="carousel-caption">Sensor de amenazas cibernéticas de NTT que proporciona detección y respuesta de red basadas en aprendizaje automático e inteligencia de amenazas.</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/slides/slide_3.png" alt="equipo de personas trabajando en incidentes de ciberseguridad">
+                            <div class="carousel-caption">Creación de casos de uso personalizados, paneles e informes, playbooks personalizados y soporte de ciclo de vida de incidentes.</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/slides/slide_4.png" alt="personas trabajando sobre hardware">
+                            <div class="carousel-caption">Monitoreo de cumplimiento e informes para omo PCI-DSS, HIPAA, SOX, etc.</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/slides/slide_5.png" alt="manos trabajando sobre computadora">
+                            <div class="carousel-caption">Gestión de la plataforma SIEM, incluidos el estado y la disponibilidad, la aplicación de parches de software y la copia de seguridad.</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="beneficios" id="beneficios">
+                <h2 class="text-white">Beneficios</h2>
+                <div class="beneficios-tarjea-container">
+                    <div class="beneficios-tarjeta beneficios-tarjeta-hidden" id="beneficios-tarjeta-1">
+                        <h3>Más económico</h3>
+                        <p>Ofrecemos diferentes opciones de suscripción, para que usted elija la que mejor se adapta a sus necesidades. De esta forma, evita gastar de más en servicios de seguridad que aportan poco o ningún beneficio a su organización.</p>
+                        <button id="beneficios-tarjeta-1-close">Cerrar</button>
+                    </div>
+                    <div class="beneficios-tarjeta beneficios-tarjeta-hidden" id="beneficios-tarjeta-2">
+                        <h3>Acceso a expertos</h3>
+                        <p>Contamos con un grupo de expertos que constantemente se capacita y actualiza. Estarán enfocados en la seguridad de la manera que usted los necesita.</p>
+                        <button id="beneficios-tarjeta-2-close">Cerrar</button>
+                    </div>
+                    <div class="beneficios-tarjeta beneficios-tarjeta-hidden" id="beneficios-tarjeta-3">
+                        <h3>Últimas actualizaciones y herraminetas de seguridad</h3>
+                        <p>Con una suscripción a un proveedor de SECaaS, no tiene que preocuparse por si tiene las herramientas y actualizaciones más recientes, ya que el proveedor instalará constantemente las iteraciones antes del software de seguridad.</p>
+                        <button id="beneficios-tarjeta-3-close">Cerrar</button>
+                    </div>
+                    <div class="beneficios-tarjeta beneficios-tarjeta-hidden" id="beneficios-tarjeta-4">
+                        <h3>Aprovisionamiento más rápido</h3>
+                        <p>Ofrecemos la posibibilidad de adaptar las medidas de seguridad a sus necesidades según estas vayan cambiando.
+                            <br>
+                            Usted puede solicitar los servicios de seguridad a medida que los requiera y se implementarán de inmediato.
+                        </p>
+                        <button id="beneficios-tarjeta-4-close">Cerrar</button>
+                    </div>
+                    <div class="beneficios-tarjeta beneficios-tarjeta-hidden" id="beneficios-tarjeta-5">
+                        <h3>Gestión interna más sencilla</h3>
+                        <p>Podrá administrar facilmente los permisos de acceso a las diferentes areas de su red y aplicaciones, de modo que los usuarios puedan limitarse a utilizar solamente lo que necesitan para hacer su trabajo.</p>
+                        <button id="beneficios-tarjeta-5-close">Cerrar</button>
+                    </div>
+                    <div class="beneficios-tarjeta beneficios-tarjeta-hidden" id="beneficios-tarjeta-6">
+                        <h3>Libera recursos</h3>
+                        <p>Con SECaaS implementado, su equipo de TI podrá concentrarse en cumplir otros objetivos organizacionales.</p>
+                        <button id="beneficios-tarjeta-6-close">Cerrar</button>
+                    </div>
+                </div>
+                <div class="beneficios-container">
+                    <div class="beneficios-card">
+                        <img src="./images/card1.svg" alt="mano con simbolo de dinero">
+                        <h3>Más económico</h3>
+                        <p>Prueba 1</p>
+                        <button id="beneficios-tarjeta-1-btn">Leer más</button>
+                    </div>
+                    <div class="beneficios-card">
+                        <img src="./images/card2.svg" alt="icono de persona experta">
+                        <h3>Acceso a expertos</h3>
+                        <p>Prueba 2</p>
+                        <button id="beneficios-tarjeta-2-btn">Leer más</button>
+                    </div>
+                    <div class="beneficios-card">
+                        <img src="./images/card3.svg" alt="icono de configuracion">
+                        <h3>Últimas actualizaciones y herramientas de seguridad</h3>
+                        <p>Prueba 3</p>
+                        <button id="beneficios-tarjeta-3-btn">Leer más</button>
+                    </div>
+                    <div class="beneficios-card">
+                        <img src="./images/card4.svg" alt="icono de rayo">
+                        <h3>Aprovisionamiento<br>más rápido</h3>
+                        <p>Prueba 4</p>
+                        <button id="beneficios-tarjeta-4-btn">Leer más</button>
+                    </div>
+                    <div class="beneficios-card">
+                        <img src="./images/card5.svg" alt="icono de gestion">
+                        <h3>Gestión interna más sencilla</h3>
+                        <p>Prueba 5</p>
+                        <button id="beneficios-tarjeta-5-btn">Leer más</button>
+                    </div>
+                    <div class="beneficios-card">
+                        <img src="./images/card6.svg" alt="icono de recursos">
+                        <h3>Libera recursos</h3>
+                        <p>Prueba 6</p>
+                        <button id="beneficios-tarjeta-6-btn">Leer más</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="sections-with-bckg-bottom"></div>
+
+        <section id="contactenos">
+            <h2>Contáctenos</h2>
+            <div class="main-contactenos-content">
+                <p>El equipo de expertos de <span class="text-accent">Evolutionet<span
+                    class="text-semibold">ec</span></span> o asesorará acerca de las mejores opciones en
+                    ciberseguridad para su empresa.</p>
+                <button>Whatsapp Evolutionet<span class="text-semibold">ec</span></button>
+            </div>
+            <img src="./images/contactenos-image.svg" alt="ilustracion de computador portatil con candado y llave, red de seguridad digital a su alrededor">
+        </section>
+    </main>
+
+    <footer>
+        <img src="./images/logo.svg" alt="Logo Evolutionetec" class="logo-img">
+        <p class="footer-email text-white">vulloa@Evolutionetec.com</p>
+    </footer>
+    
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
