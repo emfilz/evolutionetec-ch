@@ -30,21 +30,23 @@
         <a href="#" class="logo">
             <img src="./images/logo.svg" alt="Logo Evolutionetec" class="logo-img">
         </a>
-        <button class="nav-toggle" aria-label="Abrir menú" id="button">
-            <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav-menu nav-menu_visible" id="menu">
-            <li class="nav-menu_link"><a href="#conozcanos">Conózcanos</a></li>
-            <li class="nav-menu_link"><a href="#servicios">Servicios</a></li>
-            <li class="nav-menu_link"><a href="#beneficios">Beneficios</a></li>
-            <li class="nav-menu_link"><a href="#contactenos">Contáctenos</a></li>
-        </ul>
+        <nav>
+            <button class="nav-toggle" aria-label="Abrir menú" id="button">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu nav-menu_visible" id="menu">
+                <li class="nav-menu_link"><a href="#conozcanos">Conózcanos</a></li>
+                <li class="nav-menu_link"><a href="#servicios">Servicios</a></li>
+                <li class="nav-menu_link"><a href="#beneficios">Beneficios</a></li>
+                <li class="nav-menu_link"><a href="#contactenos">Contáctenos</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="hero">
         <div class="hero-text">
             <h1>Dirección y validación eficiente en incidentes de ciberseguridad.</h1>
-            <button>CONTÁCTENOS</button>
+            <button><a href="https://wa.me/593999551667" target="_blank">CONTÁCTENOS</a></button>
         </div>
         <img src="./images/hero-image.svg" alt="escudo de seguridad digital" class="hero-image">
     </div>
@@ -106,7 +108,7 @@
 
             <section class="beneficios" id="beneficios">
                 <h2 class="text-white">Beneficios</h2>
-                <div class="beneficios-tarjea-container">
+                <div class="beneficios-tarjeta-container">
                     <div class="beneficios-tarjeta beneficios-tarjeta-hidden" id="beneficios-tarjeta-1">
                         <h3>Más económico</h3>
                         <p>Ofrecemos diferentes opciones de suscripción, para que usted elija la que mejor se adapta a sus necesidades. De esta forma, evita gastar de más en servicios de seguridad que aportan poco o ningún beneficio a su organización.</p>
@@ -145,38 +147,93 @@
                     <div class="beneficios-card">
                         <img src="./images/card1.svg" alt="mano con simbolo de dinero">
                         <h3>Más económico</h3>
-                        <p>Prueba 1</p>
                         <button id="beneficios-tarjeta-1-btn">Leer más</button>
                     </div>
                     <div class="beneficios-card">
                         <img src="./images/card2.svg" alt="icono de persona experta">
                         <h3>Acceso a expertos</h3>
-                        <p>Prueba 2</p>
                         <button id="beneficios-tarjeta-2-btn">Leer más</button>
                     </div>
                     <div class="beneficios-card">
                         <img src="./images/card3.svg" alt="icono de configuracion">
                         <h3>Últimas actualizaciones y herramientas de seguridad</h3>
-                        <p>Prueba 3</p>
                         <button id="beneficios-tarjeta-3-btn">Leer más</button>
                     </div>
                     <div class="beneficios-card">
                         <img src="./images/card4.svg" alt="icono de rayo">
                         <h3>Aprovisionamiento<br>más rápido</h3>
-                        <p>Prueba 4</p>
                         <button id="beneficios-tarjeta-4-btn">Leer más</button>
                     </div>
                     <div class="beneficios-card">
                         <img src="./images/card5.svg" alt="icono de gestion">
                         <h3>Gestión interna más sencilla</h3>
-                        <p>Prueba 5</p>
                         <button id="beneficios-tarjeta-5-btn">Leer más</button>
                     </div>
                     <div class="beneficios-card">
                         <img src="./images/card6.svg" alt="icono de recursos">
                         <h3>Libera recursos</h3>
-                        <p>Prueba 6</p>
                         <button id="beneficios-tarjeta-6-btn">Leer más</button>
+                    </div>
+                </div>
+                <div class="beneficios-tarjeta-container-wide">
+                    <div id="carouselCards" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators beneficios-carousel-indicadores">
+                            <li data-target="#carouselCards" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselCards" data-slide-to="1"></li>
+                            <li data-target="#carouselCards" data-slide-to="2"></li>
+                            <li data-target="#carouselCards" data-slide-to="3"></li>
+                            <li data-target="#carouselCards" data-slide-to="4"></li>
+                            <li data-target="#carouselCards" data-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="beneficios-carousel-card d-block w-100">
+                                    <h3>Más económico</h3>
+                                    <p>Ofrecemos diferentes opciones de suscripción, para que usted elija la que mejor se adapta a sus necesidades. De esta forma, evita gastar de más en servicios de seguridad que aportan poco o ningún beneficio a su organización.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="beneficios-carousel-card d-block w-100">
+                                    <h3>Acceso a expertos</h3>
+                                    <p>Contamos con un grupo de expertos que constantemente se capacita y actualiza. Estarán enfocados en la seguridad de la manera que usted los necesita.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="beneficios-carousel-card d-block w-100">
+                                    <h3>Últimas actualizaciones y herraminetas de seguridad</h3>
+                                    <p>Con una suscripción a un proveedor de SECaaS, no tiene que preocuparse por si tiene las herramientas y actualizaciones más recientes, ya que el proveedor instalará constantemente las iteraciones antes del software de seguridad.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="beneficios-carousel-card d-block w-100">
+                                    <h3>Aprovisionamiento más rápido</h3>
+                                    <p>Ofrecemos la posibibilidad de adaptar las medidas de seguridad a sus necesidades según estas vayan cambiando.
+                                    <br>
+                                    Usted puede solicitar los servicios de seguridad a medida que los requiera y se implementarán de inmediato.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="beneficios-carousel-card d-block w-100">
+                                    <h3>Gestión interna más sencilla</h3>
+                                    <p>Podrá administrar facilmente los permisos de acceso a las diferentes areas de su red y aplicaciones, de modo que los usuarios puedan limitarse a utilizar solamente lo que necesitan para hacer su trabajo.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="beneficios-carousel-card d-block w-100">
+                                    <h3>Libera recursos</h3>
+                                    <p>Con SECaaS implementado, su equipo de TI podrá concentrarse en cumplir otros objetivos organizacionales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselCards" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselCards" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -189,7 +246,7 @@
                 <p>El equipo de expertos de <span class="text-accent">Evolutionet<span
                     class="text-semibold">ec</span></span> o asesorará acerca de las mejores opciones en
                     ciberseguridad para su empresa.</p>
-                <button>Whatsapp Evolutionet<span class="text-semibold">ec</span></button>
+                <button><a href="https://wa.me/593999551667" target="_blank">Whatsapp Evolutionet<span class="text-semibold">ec</span></a></button>
             </div>
             <img src="./images/contactenos-image.svg" alt="ilustracion de computador portatil con candado y llave, red de seguridad digital a su alrededor">
         </section>

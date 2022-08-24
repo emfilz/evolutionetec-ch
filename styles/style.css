@@ -13,27 +13,17 @@
     --fs-text-medium: 3vw;
     --fs-servicios-img: 2.5vw;
     --fs-beneficios-button: 1.2rem;
-    /*--fs-mb-h1: 2.5rem;
-    --fs-mb-h2: 1.5rem; */
-    
-    
-    
-    --fs-mb-text-normal: 1.5rem;
-    --fs-mb-text-medium: 1rem;
-    --fs-mb-text-hero-button: 1.2rem;
-    --fs-mb-text-contactenos-button: 1.4rem;
+    --fs-text-hero-button: 1.2rem;
+    --fs-text-contactenos-button: 1.4rem;
 
-    --fs-tb-h1: 3rem;
-    --fs-tb-h2: 1.8rem;
-    --fs-tb-text-normal: 2.187rem;
-    --fs-tb-text-medium: 1.375rem;
-    --fs-tb-text-small: 1.8rem;
-    --fs-tb-text-menu: 1.2rem;
-
-    --fs-dt-titles: 2.75rem; /*44pt*/
-    --fs-dt-text-normal: 2.75rem; /*44pt*/
-    --fs-dt-text-medium: 1.5rem; /*24*/
-    --fs-dt-text-small: 1.5rem; /*24*/
+    --fs-h1-wide: 3vw;
+    --fs-h2-wide: 2.5vw;
+    --fs-h3-wide: 2.2vw;
+    --fs-text-normal-wide: 2vw;
+    --fs-text-medium-wide: 2vw;
+    --fs-text-small-wide: 1.7vw;
+    --fs-text-hero-button-wide: 2rem;
+    --fs-text-contactenos-button-wide: 2.8rem;
 
     --fw-light: 300;
     --fw-regular: 400;
@@ -50,6 +40,8 @@
     --padding-inline: 3.5vw;
     --content-width: 93vw;
     --content-width-tarjeta: 75vw;
+
+    --padding-inline-wide: 15vw;
 }
 
 /*RESETEO DE CSS*//* Box sizing rules */
@@ -139,7 +131,6 @@ body {
   color: var(--clr-secondary);
   font-size: var(--fs-text-normal);
   font-weight: var(--fw-light);
-  /* margin-top: 80px; */
 }
 
 h2 {
@@ -256,7 +247,7 @@ section {
 }
 
 .hero .hero-text button {
-  font-size: var(--fs-mb-text-hero-button);
+  font-size: var(--fs-text-hero-button);
   font-weight: var(--fw-semibold);
   color: var(--clr-secondary);
   background-color: var(--clr-white);
@@ -265,6 +256,11 @@ section {
   padding-top: 0.5vw;
   padding-inline: 2vw;
   margin-top: 2vw;
+}
+
+.hero .hero-text button a {
+  text-decoration: none;
+  color: var(--clr-secondary);
 }
 
 .hero .hero-image {
@@ -302,22 +298,6 @@ main .main-conozcanos p {
   min-height: 10vw;
   width: 100vw; 
 }
-
-/*SERVICIOS*/
-
-.servicios-title {
-  /* padding-top: 15px; */
-}
-
-/* .servicios .carousel-inner .texto {
-  position: relative;
-  z-index: 1;
-  top: -10vw;
-  left: 20px;
-  max-width: 50%;
-  color: #eee;
-  font-size: var(--fs-servicios-img);
-} */
 
 /*BENEFICIOS*/
 
@@ -382,14 +362,11 @@ main .main-conozcanos p {
   display: block;
   position: absolute;
   top: 25vw;
-  /* min-height: 50vh; */
   width: var(--content-width);
   padding: 10vw;
   background-color: var(--clr-white);
-  /* box-shadow: -1px 11px 15px -5px rgba(0,0,0,0.69); */
   box-shadow: 0px 0px 50px 16px rgba(0,0,0,0.46);
   text-align: center;
-  /* border: 2px solid var(--clr-secondary); */
   border-radius: 10px;
   transition: transform 0.3s;
 }
@@ -426,6 +403,10 @@ main .main-conozcanos p {
   display: none;
 }
 
+.beneficios-tarjeta-container-wide {
+  display: none;
+}
+
 /* CONTACTENOS */
 #contactenos {
   display: grid;
@@ -449,7 +430,7 @@ main .main-conozcanos p {
 }
 
 #contactenos .main-contactenos-content button {
-  font-size: var(--fs-mb-text-contactenos-button);
+  font-size: var(--fs-text-contactenos-button);
   font-weight: var(--fw-light);
   color: var(--clr-white);
   background-color: var(--clr-whatsapp-light);
@@ -459,6 +440,11 @@ main .main-conozcanos p {
   padding-inline: 2vw;
   margin-top: 2vw;
 }
+
+#contactenos .main-contactenos-content button a {
+  color: var(--clr-white);
+  text-decoration: none;
+} 
 
 #contactenos img {
   grid-area: img;
@@ -484,27 +470,17 @@ footer .footer-email {
   font-size: var(--fs-text-medium);
 }
 
-/* MEDIA QUERIES */
-
-
-@media screen and (min-width: 900px) { /* DESKTOP */
-  body {
-
-  }
-}
-
+/* MEDIA QUERIES */ 
 @media only screen and (min-width: 1023px) {
-
-  /* body {
-    margin-top: 60px;
-  } */
 
   .header {
     height: 80px;
   }
 
   .nav-menu {
+    position: static;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin-right: 10px;
     padding: 10px;
@@ -520,4 +496,123 @@ footer .footer-email {
     width: max-content;
   }
 
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: var(--fs-text-normal-wide);
+  }
+
+  h2 {
+    font-size: var(--fs-h2-wide);
+  }
+
+  section {
+    padding-inline: var(--padding-inline-wide);
+  }
+
+  .hero {
+    padding-inline: var(--padding-inline-wide);
+  }
+
+  .hero .hero-text h1 {
+    font-size: var(--fs-h1-wide);
+  }
+
+  .hero .hero-text button {
+    font-size: var(--fs-text-hero-button-wide);
+  }
+  .hero .hero-text button:hover {
+    cursor: pointer;
+    box-shadow: -1px 11px 15px -5px rgba(0,0,0,0.69);
+  }
+
+  .hero .hero-image {
+    max-width: 20vw;
+  }
+
+  .beneficios {
+    padding-inline: var(--padding-inline-wide);
+  }
+
+  .beneficios-tarjeta-container {
+    display: none;
+  }
+  
+  .beneficios-container {
+    display: none;
+  }
+
+  .beneficios-tarjeta-container-wide {
+    display: block;
+    padding-inline: 15vw;
+  }
+
+  .beneficios-carousel-indicadores {
+    background-color: var(--clr-secondary);
+    min-height: 10px;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  .beneficios-carousel-card {
+    height: 40vw;
+    padding-inline: 5vw;
+    padding-top: 5vw;
+    background-color: var(--clr-white);
+    box-shadow: 0px 0px 50px 16px rgba(0,0,0,0.46);
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .beneficios-carousel-card h3 {
+    font-size: var(--fs-h3-wide);
+    font-weight: var(--fw-semibold);
+    color: var(--clr-secondary);
+    margin-bottom: 1.5vw;
+  }
+
+  .beneficios-carousel-card p {
+    font-size: var(--fs-text-small-wide);
+    font-weight: var(--fw-light);
+    color: var(--clr-secondary);
+  }
+
+  #contactenos .main-contactenos-content button {
+    font-size: var(--fs-text-contactenos-button-wide);
+    font-weight: var(--fw-light);
+    color: var(--clr-white);
+    background-color: var(--clr-whatsapp-light);
+    border: none;
+    border-radius: 100px;
+    padding-top: 0.5vw;
+    padding-inline: 2vw;
+    margin-top: 2vw;
+  }
+
+  #contactenos .main-contactenos-content button:hover {
+    cursor: pointer;
+    box-shadow: -1px 11px 15px -5px rgba(0,0,0,0.69);
+  }
+
+  
+  #contactenos img {
+    max-width: 25vw;
+  }
+
+  footer {
+    padding-inline: var(--padding-inline-wide);
+    margin-top: 7vw;
+    min-height: 15vw;
+    padding-block: 3vw;
+  }
+
+  footer .logo-img {
+    width: 20vw;
+  }
+  
+  footer .footer-email {
+    margin-top: 1vw;
+    font-size: var(--fs-text-medium-wide);
+  }
 }
